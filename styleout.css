@@ -505,12 +505,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 80rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-wrap {
@@ -647,6 +651,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
+.text-amber-600 {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -689,12 +698,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 1rem;
   }
 
-  .md\:pl-12 {
-    padding-left: 3rem;
+  .md\:pl-32 {
+    padding-left: 8rem;
   }
 
-  .md\:text-left {
-    text-align: left;
+  .md\:pl-12 {
+    padding-left: 3rem;
   }
 
   .md\:text-4xl {
@@ -705,6 +714,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:max-w-5xl {
+    max-width: 64rem;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:pl-9 {
+    padding-left: 2.25rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
